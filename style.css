@@ -8,3 +8,17 @@
 .card{
     border: 1px solid black;
 }
+.section-a{
+    width: 50%;
+}
+
+.section-b{
+    width: 50%;
+}
+
+
+.task-form-group{
+    margin-bottom: 5rem;
+    width: 50%;
+
+}

@@ -1,56 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Task List</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/adb19d7eeb.js" crossorigin="anonymous"></script>
-    <title>Task List</title>
-
 </head>
 
 <body>
-    <h1 class="center z-depth-2 header container">Personal Task List</h1>
-    <div class="container">
-        <div class="row">
-            <div class="col s12">
-                <div id="main" class="card z-depth-2">
-                    <div class="card-content">
-                        <span class="card-title">Task List</span>
-                        <div class="row">
-                            <form action="" id="task-form">
-                                <div class="input-field col s12">
-                                    <input type="text" name="task" id="task">
-                                    <label for="task">New Task</label>
-                                </div>
-                                <input type="submit" value="Add Task" class="btn green">
+    <div class="jumbotron jumbotron-fluid text-center container">
+        <div class="container">
+            <h1 class="display-3">Make A Note</h1>
+            <p class="lead">Make a list</p>
 
-                            </form>
-                        </div>
-                    </div>
-                    <div class="card-action">
+        </div>
+    </div>
 
-                        <h5 id="task-title">Tasks</h5>
-                        <div class="input-field col s12">
-                            <input type="text" name="filter" id="filter">
-                            <label for="filter">Filter Tasks</label>
-                        </div>
-                        <ul class="collection"></ul>
-                        <a href="#" class="clear-tasks btn  red">Clear
-                            Tasks</a>
-                    </div>
-                </div>
+    <div class="container app-body">
+        <div class=" section-a bg-light">
+            <form id="task-form" class="container task-form-group">
+                    <label for="task" class="form-label">Enter Task</label>
+                    <input type="text" name="task" class="form-control" id="task">
+                <button type="submit" value="Add Task" class="mt-2 btn btn-primary">Add</button>
+            </form>
+        </div>
+    
+    
+    
+        <div class="section-b bg-light">
+            <div class=" container input-field form-group  task-form-group">
+                <h5>Tasks</h5>
+                <input class="form-control" name="filter" id="filter" type="text">
+                <label class="form-label" for="filter">Filter Tasks</label>
+                <ul class="collection"></ul>
+                <a href="#" class="clear-tasks btn  btn-danger">Clear tasks</a>
             </div>
         </div>
     </div>
 
-    <!-- Compiled and minified JavaScript -->
+
+
+
+
+
+    <!-- Optional JavaScript -->
     <script src="./app.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

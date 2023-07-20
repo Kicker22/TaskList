@@ -45,7 +45,7 @@ function getTasks() {
         // add class
         link.className = 'delete-item secondary-content';
         //add iconHTML 
-        link.innerHTML = '<i class="fas fa-minus-circle fa-lg red-text "></i>';
+        link.innerHTML = '<i class="fas fa-minus-circle fa-lg text-red " style="color:#243c64;"></i>';
         // append the link to li
         li.appendChild(link);
         // append li to ul 
@@ -74,7 +74,7 @@ function addTask(e) {
         // add class
         link.className = 'delete-item secondary-content';
         //add iconHTML 
-        link.innerHTML = '<i class="fas fa-minus-circle fa-lg red-text "></i>';
+        link.innerHTML = '<i class="fas fa-minus-circle fa-lg text-red " style="color:#243c64;"></i>';
         // append the link to li
         li.appendChild(link);
         // append li to ul 
